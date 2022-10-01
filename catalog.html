@@ -6,7 +6,7 @@
     <title>Каталог</title>
   </head>
 <body>
-  <header class="page-header">
+  <header class="page-header" data-test="header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" alt="Логотип Седона" src="">
@@ -41,7 +41,7 @@
           </ul>
     </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner" data-test="main">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -53,7 +53,7 @@
           </li>
         </ul>
       </header>
-      <section class="catalog-products">
+      <section class="catalog-products" data-test="filter">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -104,11 +104,12 @@
           </fieldset>
           <button class="button" type="submit">Применить</button>
         </form>
-        <p>Найдено гостиниц:
-          <span>38</span>
-        </p>
+        <section class="main-inner-catalog" data-test="catalog">
+          <h2 class="catalog-title">Найдено гостиниц:38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
+          <option value="popular">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
         </select>
         <a href="#" class="button button-list">
           <span class="visually-hidden">Показать список</span>
@@ -179,7 +180,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a>...</a>
+            <a class="pagination-link" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -187,12 +188,12 @@
         </ul>
         <button class="button pagination-show-more" type="button">Показать ещё</button>
         </section>
-        <section class="main-subscribe">
+        <section class="main-subscribe" data-test="subscribe">
           <h2 class="main-subscribe-title">Подпишитесь на рассылку</h2>
           <p class="main-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="main-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="main-subscribe-email">Ваш e-mail</label>
-            <input class="main-subscribe-field" placeholder="email@example.com" type="email" name="subscribe-email"
+            <input class="main-subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email"
               id="main-subscribe-email" required>
             <button class="button main-subscribe-button" type="submit">
               <span class="main-subscribe-button">Подписаться</span>
@@ -200,7 +201,7 @@
           </form>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
