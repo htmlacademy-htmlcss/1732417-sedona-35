@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/1732417-sedona-35/3/">
 </head>
   <body>
 <header class="page-header" data-test="header">
 <nav class="navigation">
   <a class="navigation-logo" href="/">
-    <img class="page-header-logo" alt="Логотип Седона" src="/images/header/logo.svg" width="140" height="70">
+    <img class="page-header-logo" alt="Логотип Седона" src="images/header/logo.svg" width="140" height="70">
   </a>
   <ul class="navigation-list">
     <li class="navigation-item">
@@ -44,7 +45,7 @@
 <main class="main-index" data-test="main">
   <section class="main-index-hero" data-test="hero">
     <h1 class="visually-hidden">SEDONA</h1>
-    <img class="hero-background" src="/images/index/welcome.svg" alt="Логотип сайта" width="458" height="352">
+    <img class="hero-image" src="images/index/welcome.svg" alt="Логотип сайта" width="458" height="352">
     <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
@@ -55,7 +56,7 @@
         <h3 class="advantages-title">НАСТОЯЩИЙ ГОРОДОК</h3>
         <p class="advantages-description"> Седона — не аттракцион для туристов, там течёт <br>своя жизнь</p>
       </li>
-      <li class="advantages-image"> <img src="/images/index/house.jpg" width="800" height="384" alt="Вид с окна">
+      <li class="advantages-image"> <img src="images/index/house.jpg" width="800" height="384" alt="Вид с окна">
       </li>
       <li class="main-advantages-item">
         <h3 class="main-advantages-title">Небольшая площадь</h3>
@@ -71,11 +72,12 @@
       </li>
     </ul>
   </section>
-  <section class="main-canyon">
-    <h2 class="main-canyon-title">Там есть
-      мост дьявола</h2>
+  <section class="main-canyon"> <!--Думаю заменить section canyon на список li-->
+    <img class="main-canyon-background" src="images/index/canyon.jpg" alt="Мост дьявола" width="800" height="384">
+    <h3 class="main-canyon-title">Там есть
+      мост дьявола</h3>
       <p class="main-canyon-desccription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-      <img class="main-canyon-background" src="/images/index/canyon.jpg" alt="Мост дьявола" width="800" height="384">
+
   </section>
   <section class="main-advantages" data-test="advantages">
     <h2 class="visually-hidden">Преимущества</h2>
