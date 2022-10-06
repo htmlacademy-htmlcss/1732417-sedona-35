@@ -18,12 +18,40 @@ body {
   font-family: "PT Sans" sans-serif;
   font-size: 22px;
   line-height: 26px;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #fff;
+
 }
 
+.page-header {
+  color: #000;
+  background-color: #fff;
+}
+
+.navigation-link {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation-link-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+
+}
 .main-index-hero {
   background-image: url(../images/index/main-hero-background.jpg);
-background-size: 100% auto;
-background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
