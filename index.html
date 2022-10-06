@@ -49,27 +49,30 @@
     </header>
     <main class="main-index" data-test="main">
       <section class="main-index-hero" data-test="hero">
-        <h1 class="visually-hidden">SEDONA</h1>
-        <img
-          class="hero-image"
-          src="images/index/welcome.svg"
-          alt="WELCOM to the gorgeus SEDONA Because the Grand Canyon sucks"
-          width="458"
-          height="352"
-        />
+        <h1 class="visually-hidden title-hidden">SEDONA</h1>
+        <div class="hero-image">
+          <img
+            src="images/index/welcome.svg"
+            alt="WELCOM to the gorgeus SEDONA Because the Grand Canyon sucks"
+            width="458"
+            height="352"
+          />
+        </div>
       </section>
       <div class="main-description-sedona">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="main-description-sedona-title">
+          Седона - небольшой городок в Аризоне, заслуживающий большего!
+        </h2>
         <p class="main-description-sedona-text">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </div>
       <section class="main-advantages" data-test="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
+        <h2 class="visually-hidden title-hidden">Преимущества</h2>
         <ul class="main-advantages-list">
-          <li class="advantages-item bg-light-blue">
-            <h3 class="advantages-title">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p class="advantages-description">
+          <li class="main-advantages-item bg-light-blue">
+            <h3 class="main-advantages-title bg-light-blue">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <p class="main-advantages-description bg-light-blue">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </li>
@@ -106,8 +109,8 @@
           </li>
 
           <li class="main-advantages-item bg-light-blue">
-            <h3 class="main-advantages-title">Там есть мост дьявола</h3>
-            <p class="main-advantages-desccription">
+            <h3 class="main-advantages-title bg-light-blue">Там есть мост дьявола</h3>
+            <p class="main-advantages-description bg-light-blue">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
           </li>
@@ -133,12 +136,12 @@
         </ul>
       </section>
       <section class="main-hotel-search" data-test="search">
-        <h2 class="visually-hidden">Поиск гостинницы</h2>
+        <h2 class="title-hidden">Поиск гостинницы</h2>
         <h2 class="main-hotel-search-title">Заинтересовались?</h2>
         <p class="main-hotel-search-description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="button main-hotel-search-button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+        <a class="button main-hotel-search-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="main-subscribe" data-test="subscribe">
         <h2 class="main-subscribe-title">Подпишитесь на рассылку</h2>
@@ -146,24 +149,22 @@
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="main-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="main-subscribe-email">Ваш e-mail</label>
+          <label for="main-subscribe-email"></label>
           <input
             class="main-subscribe-field"
-            placeholder="email@example.com"
+            placeholder="Ваш e-mail"
             type="email"
             name="subscribe-email"
             id="main-subscribe-email"
             required
           />
-          <button class="button main-subscribe-button" type="submit">
-            <span class="main-subscribe-button">Подписаться</span>
-          </button>
+          <button class="button main-subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="footer" data-test="footer">
       <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+        <h2 class="visually-hidden title-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
@@ -183,7 +184,7 @@
         </ul>
       </section>
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Контакты</h2>
+        <h2 class="visually-hidden title-hidden">Контакты</h2>
         <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
         <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/">
