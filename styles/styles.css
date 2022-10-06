@@ -1,26 +1,25 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  src: url('../fonts/ptsans-400.woff2') format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  src: url('../fonts/ptsans-700.woff2') format('woff2');
   font-display: swap;
 }
 
 body {
-  font-family: "PT Sans" sans-serif;
+  font-family: 'PT Sans' sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000;
   background-color: #fff;
-
 }
 
 .page-header {
@@ -41,13 +40,12 @@ body {
 .navigation-link-button {
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #756157;
-
 }
 .main-index-hero {
   background-image: url(../images/index/main-hero-background.jpg);
@@ -60,11 +58,14 @@ body {
 }
 
 .main-advantages-title {
-  font-family: "PT Sans" sans-serif;
+  font-family: 'PT Sans' sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
-.advantages-item {
-  background-color: #82B3D3;
+.bg-light-blue {
+  background-color: #82b3d3;
+}
+.bg-light-grey {
+  background-color: rgba(131, 179, 211, 0.12);
 }
