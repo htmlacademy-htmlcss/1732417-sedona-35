@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+    <!--HEADER-->
+
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="/">
@@ -41,12 +43,15 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link-button" href="#">
-              <span class="visually-hidden">Хочу сюда</span>
+              <span class="visually-hidden">Хочу сюда!</span>
             </a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <!--HERO-BLOCK-->
+
     <main class="main-index" data-test="main">
       <section class="main-index-hero" data-test="hero">
         <h1 class="visually-hidden title-hidden">SEDONA</h1>
@@ -67,6 +72,9 @@
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </div>
+
+      <!--ПРЕИМУЩЕСТВА-->
+
       <section class="main-advantages" data-test="advantages">
         <h2 class="visually-hidden title-hidden">Преимущества</h2>
         <ul class="main-advantages-list">
@@ -135,6 +143,9 @@
           </li>
         </ul>
       </section>
+
+      <!--ПОИСК ГОСТИНИЦЫ-->
+
       <section class="main-hotel-search" data-test="search">
         <h2 class="title-hidden">Поиск гостинницы</h2>
         <h2 class="main-hotel-search-title">Заинтересовались?</h2>
@@ -143,25 +154,33 @@
         </p>
         <a class="button main-hotel-search-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
+
+      <!--SUBSCRIBE-->
+
       <section class="main-subscribe" data-test="subscribe">
         <h2 class="main-subscribe-title">Подпишитесь на рассылку</h2>
         <p class="main-subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form class="main-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="main-subscribe-email"></label>
-          <input
-            class="main-subscribe-field"
-            placeholder="Ваш e-mail"
-            type="email"
-            name="subscribe-email"
-            id="main-subscribe-email"
-            required
-          />
-          <button class="button main-subscribe-button" type="submit">Подписаться</button>
-        </form>
+        <div class="main-subscribe-container">
+          <form class="main-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="main-subscribe-email"></label>
+            <input
+              class="main-subscribe-field"
+              placeholder="Ваш e-mail"
+              type="email"
+              name="subscribe-email"
+              id="main-subscribe-email"
+              required
+            />
+            <button class="button main-subscribe-button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </section>
     </main>
+
+    <!--FOOTER-->
+
     <footer class="footer" data-test="footer">
       <section class="footer-social">
         <h2 class="visually-hidden title-hidden">Социальные сети</h2>
