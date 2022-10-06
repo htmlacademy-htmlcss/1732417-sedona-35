@@ -29,7 +29,6 @@ body {
 }
 
 .navigation-link {
-  font-family: 'PT Sans', sans-serif;
   font-size: 20px;
   line-height: 24px;
   color: #000;
@@ -54,4 +53,18 @@ body {
   background-image: url(../images/index/main-hero-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.main-advantages-list {
+  text-align: center;
+}
+
+.main-advantages-title {
+  font-family: "PT Sans" sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advantages-item {
+  background-color: #82B3D3;
 }
