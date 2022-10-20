@@ -51,22 +51,29 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000;
-  background-color: #fff;
-}
-.main-index {
-  margin-left: 40px;
-  margin-right: 40px;
+  background-color: #f2f2f2;
 }
 
-.main-inner {
-  margin-left: 40px;
-  margin-right: 40px;
+.page-container {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
 /* Временно скрыл h1-h2 заголовки */
 
 .visually-hidden {
-  visibility: hidden;
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* Header */
 .page-header {
@@ -83,10 +90,12 @@ body {
 }
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   width: 616px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  align-items: center;
+  list-style-type: none;
 }
 .navigation-item {
   margin-right: 32px;
@@ -106,7 +115,7 @@ body {
 .navigation-user {
   display: flex;
   margin-left: auto;
-  width: 400px;
+
   justify-content: flex-end;
 }
 .navigation-logo {
@@ -119,6 +128,8 @@ body {
   height: 70px;
 }
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -192,8 +203,8 @@ body {
   display: flex;
   width: 620px;
 
-  margin: 0 auto 25px;
-  padding-top: 69px;
+  margin: 69px auto 25px;
+  /* padding-top: 69px; */
 }
 .main-description-sedona,
 .main-hotel-search-description {
@@ -239,7 +250,7 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
   text-align: center;
-  list-style: none;
+  list-style-type: none;
 }
 .main-advantages-container-text {
   display: flex;
@@ -438,6 +449,7 @@ body {
 
 .footer {
   display: flex;
+
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
@@ -445,6 +457,7 @@ body {
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 70px;
   margin-top: 45px;
   margin-bottom: 35px;
@@ -453,7 +466,8 @@ body {
 
 .footer-social-list {
   display: flex;
-  list-style: none;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .footer-social-item {
@@ -510,6 +524,10 @@ body {
   background-position: center;
 }
 
+.filter-content {
+  margin: 0 auto;
+}
+
 .filter-catalog {
   display: flex;
   margin-bottom: 73px;
@@ -531,7 +549,7 @@ body {
 }
 
 .catalog-filter-list {
-  list-style: none;
+  list-style-type: none;
   margin-bottom: 73px;
 }
 
@@ -583,7 +601,7 @@ body {
   margin-bottom: 40px;
   color: #fff;
   margin-left: 70px;
-  list-style: none;
+  list-style-type: none;
 }
 .breadcrumbs-link {
   font-weight: 400;
@@ -656,7 +674,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 
-  list-style: none;
+  list-style-type: none;
   padding-left: 70px;
 }
 
@@ -665,7 +683,6 @@ body {
 }
 
 .hotel-card-link {
-  margin-left: 20px;
   text-decoration: none;
 }
 
@@ -673,18 +690,36 @@ body {
   width: 340px;
   height: 438px;
   margin-right: 20px;
-}
-
-.hotel-card-clear {
-  margin-right: 0;
+  margin-bottom: 20px;
 }
 
 .sorting-container {
-  color: #000;
-  background-color: #fff;
+  display: flex;
+  margin-left: auto;
 }
+
+.select-control {
+  margin-right: 70px;
+  width: 292px;
+  height: 49px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-list:not(:last-child) {
+  margin-right: 8px;
+}
+
 .hotel-card {
+  padding: 20px;
   background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
 }
 .hotel-card-title {
   margin-bottom: 16px;
@@ -704,7 +739,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
 }
 
 .hotel-card-description-container p {
@@ -772,7 +806,11 @@ body {
   height: 60px;
   padding-left: 70px;
   padding-right: 70px;
-  list-style: none;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-item {
@@ -782,7 +820,7 @@ body {
   width: 60px;
   height: 60px;
   background-color: #82b3d3;
-  margin-right: 8px;
+
   border-radius: 4px;
 }
 
