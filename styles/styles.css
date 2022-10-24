@@ -515,8 +515,25 @@ body {
   margin-bottom: 39px;
 }
 
-.footer-button {
-  margin-right: 27px;
+.footer-social-link {
+  display: block;
+  width: 47px;
+  height: 40px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-vk {
+  background-image: url(../images/footer/icon-vk.svg);
+}
+
+.footer-social-tg {
+  background-image: url(../images/footer/icon-telegram.svg);
+}
+
+.footer-social-youtube {
+  background-image: url(../images/footer/icon-youtube.svg);
 }
 
 /*КАТАЛОГ-ФИЛЬТР*/
