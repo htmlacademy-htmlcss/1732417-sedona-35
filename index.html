@@ -22,7 +22,7 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Седоне</a>
@@ -433,6 +433,77 @@
           </a>
         </section>
       </footer>
+    </div>
+
+    <div class="modal-container modal-container-close">
+      <!--modal-container-close класс закрытия окна-->
+      <div class="modal modal-search">
+        <section class="modal-content">
+          <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group search-form-date">
+              <label class="form-label" for="search-date-arrival"> Дата Заезда: </label>
+              <input
+                class="search-input"
+                type="text"
+                id="search-date-arrival"
+                name="search-date"
+                value="27 апреля 2020"
+              />
+              <span class="input-text error"> Мы не можем отправить вас в прошлое. </span>
+            </div>
+
+            <div class="field-group">
+              <label class="form-label" for="search-date-departure"> Дата Выезда: </label>
+              <input
+                class="search-input"
+                type="text"
+                id="search-date-departure"
+                name="search-date"
+                value="1 сентября 2023"
+              />
+              <span class="input-text correctly">
+                На эти даты есть свободные номера. Пока есть.
+              </span>
+            </div>
+
+            <div class="field-group field-group-last">
+              <div class="search-form-date">
+                <label for="old" class="form-label"> Взрослые: </label>
+                <div class="batton-container">
+                  <button class="minus"><span class="minus-icons"></span></button>
+                  <input id="old" class="input-counter" type="number" name="adult" value="2" />
+
+                  <button class="minus minus_plus"><span class="minus-icons"></span></button>
+                </div>
+              </div>
+
+              <div class="search-form-date">
+                <label for="childs" class="form-label">
+                  Дети:
+                  <span class="tooltip">
+                    <span class="tooltip-text"
+                      >Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                      лет. Дети до 6 лет размещаются бесплатно.</span
+                    >
+                  </span>
+                </label>
+
+                <div class="batton-container">
+                  <button class="minus"><span class="minus-icons"></span></button>
+                  <input id="childs" class="input-counter" type="number" name="child" value="2" />
+
+                  <button class="minus minus_plus"><span class="minus-icons"></span></button>
+                </div>
+              </div>
+            </div>
+            <button class="button search-submit" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>

@@ -144,64 +144,82 @@
             <div class="filter-catalog">
               <h2 class="visually-hidden title-hidden">Фильтр гостиниц</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <fieldset class="catalog-filter-group infrastructure">
-                  <legend class="catalog-filter-title infrastructure">Инфраструктура:</legend>
-                  <ul class="catalog-filter-list infrastructure">
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Инфраструктура:</legend>
+                  <ul class="catalog-filter-list">
                     <li class="catalog-filter-item pool">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="pool" checked />
-                        Бассейн
+                        <input
+                          class="visually-hidden control-input"
+                          type="checkbox"
+                          name="pool"
+                          checked
+                        />
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассеин</span>
                       </label>
                     </li>
+
                     <li class="catalog-filter-item parking">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked />
-                        Парковка
+                        <input
+                          class="visually-hidden control-input"
+                          type="checkbox"
+                          name="parking"
+                          checked
+                        />
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item wi-fi">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi" />
-                        Wi-fi
+                        <input class="visually-hidden control-input" type="checkbox" name="wi-fi" />
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-fi </span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="catalog-filter-group hotel">
-                  <legend class="catalog-filter-title hotel">Тип Жилья:</legend>
-                  <ul class="catalog-filter-list hotel">
-                    <li class="catalog-filter-item hotel">
-                      <label class="control">
+
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Тип Жилья:</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="control control_round">
                         <input
-                          class="control-input"
+                          class="visually-hidden control-input"
                           type="radio"
                           name="product-group"
                           value="hotel"
                           checked
                         />
-                        Гостиница
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item motel">
-                      <label class="control">
+                      <label class="control control_round">
                         <input
-                          class="control-input"
+                          class="visually-hidden control-input"
                           type="radio"
                           name="product-group"
                           value="motel"
                         />
-                        Мотель
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
-                    <li class="catalog-filter-item appartements">
-                      <label class="control">
+                    <li class="catalog-filter-item">
+                      <label class="control control_round">
                         <input
-                          class="control-input"
+                          class="visually-hidden control-input"
                           type="radio"
                           name="product-group"
                           value="appartements"
                         />
-                        Апартаменты
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -212,24 +230,23 @@
 
                   <div class="control-container">
                     <label class="control">
-                      <input class="input-control" type="text" value="0" />
+                      <input class="input-control" type="number" value="0" name="min-price" />
                     </label>
                     <label class="control">
-                      <input class="input-control" type="text" value="9000" />
+                      <input class="input-control" type="number" value="9000" name="max-price" />
                     </label>
                   </div>
 
-                  <label class="price" for="range">
-                    <input
-                      class="price-range"
-                      type="range"
-                      min="0"
-                      max="9000"
-                      step="1000"
-                      name="price-range"
-                      id="range"
-                    />
-                  </label>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 216px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
                 </fieldset>
                 <div class="filter-button-container">
                   <button class="filter-apply-uppercase button" type="submit">Применить</button>
@@ -252,15 +269,63 @@
                 <option value="expensive">Сначала дорогие</option>
               </select>
 
-              <a href="#" class="sorting-current sorting-filter sorting-card">
+              <a href="#" class="sorting-current sorting-filter">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)" fill="#000">
+                    <path
+                      d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10
+0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z" /></clipPath>
+                  </defs>
+                </svg>
                 <span class="visually-hidden">Показать карточки</span>
               </a>
 
-              <a class="sorting-filter sorting-full" href="#">
+              <a class="sorting-filter" href="#">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)" fill="#000">
+                    <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z" /></clipPath>
+                  </defs>
+                </svg>
                 <span class="visually-hidden">Показать на весь экран</span>
               </a>
 
-              <a class="sorting-filter sorting-list" href="#">
+              <a class="sorting-filter" href="#">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#a)" fill="#000">
+                    <path
+                      d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16
+4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z" /></clipPath>
+                  </defs>
+                </svg>
                 <span class="visually-hidden">Показать список</span>
               </a>
             </div>
