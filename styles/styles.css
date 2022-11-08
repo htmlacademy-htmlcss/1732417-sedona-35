@@ -816,8 +816,20 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.control:active .control-label {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .control:hover .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
 }
 
 .catalog-title {
